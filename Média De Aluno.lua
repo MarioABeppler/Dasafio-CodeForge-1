@@ -7,17 +7,17 @@ local resultado = 0
 
 -- Loop for para iterar sobre a tabela
 for i, variavel in ipairs(variaveis) do
-    -- Solicita ao usuário que insira o valor da variável
     print("Digite o valor para " .. variavel .. ": ")
-
-    -- Lê a entrada do usuário e armazena na variável correspondente
+    -- Lê e adiciona os valores a varieavel Resultado
     resultado = resultado + io.read()
 end
 
-local resultado = resultado / 4
+-- Calcula a media
+local media = resultado / 4
 
-if resultado > 7 then
-    print("Sua média foi de " .. resultado .. " e você está APROVADO")
+-- Motra a media do aluno e responde se foi APROVADO ou REPROVADO
+if media > 7 then
+    print("Sua média foi de " .. media .. " e você está APROVADO")
 else
-    print("Sua média foi de " .. resultado .. " e você está REPROVADO Estude mais meu parça")
+    print("Sua média foi de " .. media .. " e você está REPROVADO Estude mais meu parça")
 end

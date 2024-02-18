@@ -16,7 +16,7 @@ end
 local media = resultado / 4
 
 -- Motra a media do aluno e responde se foi APROVADO ou REPROVADO
-if media > 7 then
+if media >= 7 then
     print("Sua média foi de " .. media .. " e você está APROVADO")
 else
     print("Sua média foi de " .. media .. " e você está REPROVADO Estude mais meu parça")
